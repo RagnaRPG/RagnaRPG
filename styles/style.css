@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --cor001: #538C51;
+    --cor002: #AFBF73;
+    --cor003: #F2EBD5;
+    --cor004: #F2B84B;
+    --cor005: #D95E32;
+
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+
+    font-family: poppins, sans-serif;
+
+    color: var(--cor003);
+    
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    background: linear-gradient(var(--cor004), var(--cor005));
+    background-repeat: no-repeat;
+    
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+
+    font-size: 3em;
+    text-shadow: 2px 2px 2px black;
+    color: var(--cor001);
+}
+
+nav {
+    display: flex;
+    border: 1px solid white;
+    padding: 10px;
+    margin-bottom: 50px;
+
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    padding-left: 20px;
+
+    font-size: 1.2em;
+}
+
+a:hover {
+    color: rgb(231, 231, 231);
+}
+
+main {
+    background-color: var(--cor003);
+    display: grid;
+    place-items: center;
+    text-align: center;
+    width: 400px;
+    padding: 10px;
+
+    margin: auto;
+    border-radius: 4px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.315);
+    
+
+}
+
+article {
+    
+}
+h2, p {
+    color: #D95E32;
+}
