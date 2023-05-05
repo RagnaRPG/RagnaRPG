@@ -27,10 +27,9 @@ body {
 
     background: linear-gradient(to top, var(--cor004), var(--cor005));
     background-repeat: no-repeat;
-    
 }
 
-h1 {
+#title {
     text-align: center;
     padding: 10px;
 
@@ -44,6 +43,9 @@ nav {
     backdrop-filter: blur (10px);
     -webkit-backdrop-filter: blur(10px);
     
+    position: sticky;
+    top: 0;
+
     place-items: center;
     display: flex;
     padding: 10px;
@@ -51,6 +53,7 @@ nav {
     margin-bottom: 50px;
 
     justify-content: space-evenly;
+    
 }
 
 nav:hover a{
@@ -67,6 +70,10 @@ nav:hover a:hover {
     
 }
 
+nav:not(:hover) a{
+    transition: 0.5s;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -76,25 +83,152 @@ a {
     transition: 0.25 ease;
 }
 
-main {
+.teste {
     background-color: var(--cor003);
     display: grid;
     place-items: center;
     text-align: center;
-    width: 500px;
+    width: 300px;
     padding: 30px;
+    
 
     margin: auto;
     border-radius: 8px;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.315);
+    margin-bottom: 50px;
+}
+
+.photo {
+    margin: 15px;
+    width: 280px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.315);
+}
+
+#logo {
+    margin: 15px;
+    width: 250px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.315);
+}
+
+#baixar {
+    background-color: var(--cor003);
+    display: grid;
+    place-items: center;
+    text-align: center;
+    width: 300px;
+    height: 600px;
+    padding: 30px;
     
 
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.315);
+    margin-bottom: 50px;
 }
+
+#titlep2 {
+    color: var(--cor001);
+    margin: 10px;
+}
+
+#download {
+    width: 200px;
+    font-size: 1em;
+    color: var(--cor001);
+    border: none;
+    cursor: pointer;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.315);
+}
+
+#download:hover {
+    transition: 0.5s;
+    background-color: rgb(223, 223, 223);
+    scale: 0.95;
+}
+
+#download:not(:hover) {
+    transition: 0.5s;
+}
+
+
+
+#magnus {
+    background-color: var(--cor003);
+    display: grid;
+    place-items: center;
+    text-align: center;
+    width: 300px;
+    padding: 30px;
+    
+
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.315);
+    margin-bottom: 50px;
+
+}
+
+#magnusStory, #pegasoStory {
+    display: none;
+    
+    
+}
+
+#pegaso {
+    background-color: var(--cor003);
+    display: grid;
+    place-items: center;
+    text-align: center;
+    width: 300px;
+    padding: 30px;
+    
+
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.315);
+}
+
+
+.material-symbols-outlined {
+  font-size: 3em;
+  cursor: pointer;
+  color: #D95E32;
+  transform: rotateX(180deg);
+  
+  
+  
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+#aoContrario {
+    transform: rotateX(360deg); 
+}
+
+
+.material-symbols-outlined:hover {
+    transition: 0.3s;
+    scale: 1.4;
+    
+}
+
+
 h2 {
     font-size: 2em;
 }
 
-h2, h3, article {
+h2, h3, p, h4, article{
     color: #D95E32;
 }
 article {
@@ -107,15 +241,11 @@ h3 {
     margin: 10px;
 }
 
+h4 {
+    margin-top: 10px;
+}
+
 p {
     color: #D95E32;
 }
 
-img {
-    margin: 15px;
-    width: 280px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.315);
-}

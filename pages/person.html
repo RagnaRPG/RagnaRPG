@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="../styles/style.css">
     <script src="../scripts/main.js"></script>
     <title>RagnaRPG</title>
 </head>
 <body>
     <header>
-        <h1>RagnaRPG</h1>
+        <h1 id="title">RagnaRPG</h1>
     </header>
     <nav>
         <a href="index.html" >Inicio</a>
-        <a href="#" >Livros</a>
+        <a href="livros.html" >Livros</a>
         <a href="person.html" >Personagens</a>
         <a href="#">História</a>
     </nav>
@@ -22,8 +23,11 @@
     <section>
          <div id="magnus">
              <h2>Magnus Morgthan</h2>
-             <img src="../pictures/magnus.jpeg" alt="Magnus picture" >
-                 <article id="magnus-story">
+             <img src="../pictures/magnus.jpeg" alt="Magnus picture" class="photo">
+             <span class="material-symbols-outlined" onclick="magnusMostrar()">
+                expand_less
+                </span>
+                 <article id="magnusStory">
                     Magnus Morgthan, O último de seus decendentes, o resquício da poderosa família Morgthan, onde grandes Mestres e poderosos Magos transformaram uma cidade num império, regida pelos próprios, que foi dizimada, após negar lealdade a Prontera durante o reinado de Tristan I.
                     Seu objetivo de vida é reerguer sua família a glória e conquistar sua ascensão, ele faria qualquer coisa por isso.
                         
@@ -34,13 +38,32 @@
                     Magnus mora no castelo, em Prontera, mas em secreto ele procura saber as fraquezas do reino, a intenção das pessoas, afim de o destruir de dentro para fora, sem se arriscar, dividindo informações apenas com uma pessoa.
                         
                     <h3>Amigos: </h3>
-                    Hallaster: Magnus respeita e admira seres e pessoas mais poderosas que ele, ele é ambicioso e gostar de aprender com os mais sábios; Hallaster é um exemplo disso, Magnus tem uma gigante admiração pelo grande mestre, e ele procura entender os mistérios que o envolvem.
+                    <h4>Hallaster</h4> Magnus respeita e admira seres e pessoas mais poderosas que ele, ele é ambicioso e gostar de aprender com os mais sábios; Hallaster é um exemplo disso, Magnus tem uma gigante admiração pelo grande mestre, e ele procura entender os mistérios que o envolvem.
                         
-                     Atrosh: Um poderoso mago, era o melhor amigo de seu pai, ensinou Magnus sobre seu passado e pretende ajudá-lo num futuro próximo para a Ascensão de sua casa. Atrosh era a mão do rei Robert, ele fugiu com Magnus durante a batalha e o criou como seu filho, pela promessa que fez a Robert, ensinou muito do que sabia e secretamente procura aliados para a grande rebelião.
+                     <h4>Atrosh</h4> Um poderoso mago, era o melhor amigo de seu pai, ensinou Magnus sobre seu passado e pretende ajudá-lo num futuro próximo para a Ascensão de sua casa. Atrosh era a mão do rei Robert, ele fugiu com Magnus durante a batalha e o criou como seu filho, pela promessa que fez a Robert, ensinou muito do que sabia e secretamente procura aliados para a grande rebelião.
                         
                      <h3>Segredo:</h3> Filho de uma família inimiga do reino, infiltrado no castelo de Prontera.
                         
                     <h3>Características do personagem:</h3> Destemido, ambicioso, inteligente, observador, sempre busca mais conhecimento e poder, egoísta até certo ponto, não é seu principal objetivo ajudar as pessoas, mas quando o convém ele é uma pessoa boa.</article>
+                </div>
+         <div id="pegaso">
+             <h2>Pégaso Negro</h2>
+             <img src="../pictures/pegaso.jpeg" alt="Magnus picture" class="photo">
+             <span class="material-symbols-outlined" onclick="pegasoMostrar()">
+                expand_less
+                </span>
+                 <article id="pegasoStory">
+                    Enquanto o homem mascarado ria descontroladamente, a cidade de Prontera parecia estar à beira do colapso. Mas então, um sinal de esperança surgiu no céu. Nuvens escuras começaram a se formar, relâmpagos coloridos iluminavam o céu, e trovões estrondosos ecoavam pelos cantos da cidade em destruição.
+
+                    Os moradores de Prontera levantaram seus olhos esperançosos para o céu e, em meio à tempestade, podiam ouvir o som de um galope distante. Era como se um cavalo estivesse correndo pelo céu. Então, de repente, as nuvens se abriram e uma luz intensa iluminou toda a cidade. Era o relinchar de um cavalo vindo dos céus.
+
+                    Quando a luz se dissipou, um majestoso pegasus emergiu, cortando os céus com suas asas poderosas, deixando um rastro de luz azulada por onde passava. Os cidadãos de Prontera estavam maravilhados com a criatura lendária, admirando sua beleza e agilidade. O pegasus era o mensageiro dos deuses e parecia ter vindo para ajudar.
+
+                    Enquanto a criatura voava, as asas batiam forte contra o vento, espalhando as nuvens e deixando um rastro de luz que iluminava a cidade em ruínas. As chuvas fortes começaram a cair em toda a região, apagando os incêndios e dando início a uma nova esperança para os moradores de Prontera.
+
+                    Os cidadãos ajoelhavam-se no chão, em reverência à criatura celestial que parecia ter sido enviada pelos deuses para ajudá-los. Os gritos de admiração e gratidão se misturavam à chuva forte, que agora caía com mais intensidade. As chamas que antes consumiam a cidade começavam a se apagar e o cheiro de fumaça dava lugar ao frescor da chuva.
+
+                    Enquanto todos admiravam a criatura, o homem mascarado permanecia em silêncio, olhando para os céus com seus punhos cerrados, tentando conter uma fúria que crescia dentro dele. Ele sabia que algo havia mudado naquele momento. A chegada do pegasus não era um sinal de paz, mas sim um aviso para ele. Era hora de partir antes que fosse tarde demais.</article>
                 </div>
                 
             <article>
